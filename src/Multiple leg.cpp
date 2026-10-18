@@ -1,6 +1,5 @@
 // All Libraries
 #include <Arduino.h>
-#include <ESP32Servo.h>
 #include <math.h>
 #include <Wire.h>
 #include <Adafruit_PWMServoDriver.h>
@@ -11,9 +10,9 @@
 #define SERVOMAX  500 // This is the 'maximum' pulse length count (out of 4096)
 #define SERVO_FREQ 50 // Analog servos run at ~50 Hz update rate
 // Left servos
-const int coxa_pin[] = {0, 3, 6}; // MAYBE CHANGE to 012 345 678 depending on servo layout 
-const int femur_pin[] = {1, 4, 7}; // right now it is, each legs 3 servos are in order together, in order of coxa, femur, tibia, then the next leg starts with coxa again
-const int tibia_pin[] = {2, 5, 8};
+const int coxa_pin[] = {0, 5, 6}; // MAYBE CHANGE to 012 345 678 depending on servo layout 
+const int femur_pin[] = {1, 6, 7}; // right now it is, each legs 3 servos are in order together, in order of coxa, femur, tibia, then the next leg starts with coxa again
+const int tibia_pin[] = {2, 7, 8};
 
 // Servo board
 Adafruit_PWMServoDriver leftpwm = Adafruit_PWMServoDriver();

@@ -17,7 +17,7 @@ void setup() {
 
   coxa_servo.attach(coxa_pin);
   femur_servo.attach(femur_pin);
-  tibia_servo.attach(tibia_pin); u
+  tibia_servo.attach(tibia_pin);
 
   Serial.println("Enter angles as: X Y Z");
 }
